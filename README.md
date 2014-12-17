@@ -1,6 +1,6 @@
 # Zipang
 
-TODO: Write a gem description
+Convert to alphabet slug from japanese
 
 ## Installation
 
@@ -20,11 +20,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You have to set JAVA_HOME
+
+```
+# .bashrc
+# This is OSX example.
+export JAVA_HOME=`/usr/libexec/java_home`
+```
+
+and to run
+
+```
+Zipang.to_slug('こんにちは、世界') #=> konnichiha-sekai
+```
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/zipang/fork )
+1. Fork it ( https://github.com/halenohi/zipang/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

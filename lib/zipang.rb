@@ -10,7 +10,7 @@ module Zipang
 
   class << self
     def to_slug(str)
-      Kuromoji.process(:getAllFeatures, clean_spaces(str))
+      Kuromoji::Core.new.process(:getAllFeatures, clean_spaces(str))
         .map{ |word, features| [word].concat features.split(',') }
         .map{ |words| words.last == '*' ? words.first : words.last }
         .map{ |word| word.tr('０-９', '0-9') }

@@ -1,4 +1,4 @@
-require "kuromoji"
+require "kuromoji-ruby"
 require "romaji"
 
 require "zipang/version"
